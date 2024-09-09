@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/_build/target-deps/gtest/release/include",
+                "${workspaceFolder}/_build/target-deps/audiofile/include",
+                "${workspaceFolder}/_build/target-deps/grpc/release/include",
+                "${workspaceFolder}/_build/target-deps/abseil/release/include",
+                "${workspaceFolder}/_build/target-deps/protobuf/release/include",
+                "${workspaceFolder}/source",
+                "${workspaceFolder}/source/ace_grpc_cpp",
+                "${workspaceFolder}/source/aceclient",
+                "${workspaceFolder}/source/maya_aceclient"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

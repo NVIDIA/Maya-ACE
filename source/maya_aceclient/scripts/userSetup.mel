@@ -1,0 +1,20 @@
+
+menu -label "ACE" -parent "MayaWindow";
+
+    menuItem
+        -label "Attach a new Animation Player"
+        -command "import ace_tools;ace_tools.attach_animation_player_to_blendshape();"
+        -annotation "Select a blendshape node or a mesh connected to a blendshape node. It will create a new AceAnimationPlayer and connect it to the blendshape node."
+        -sourceType "python";
+
+    menuItem
+        -label "Connect an existing Animation Player"
+        -command "import ace_tools;ace_tools.connect_animation_player_to_blendshape();"
+        -annotation "Select an AceAnimationPlayer node and a blendshape node or a mesh connected to a blendshape node. It will connect the AceAnimationPlayer to the blendshape node."
+        -sourceType "python";
+
+    menuItem
+        -label "Export A2F Parameters"
+        -command "from ui import ace_export_config_parameters; ace_export_config_parameters.display_export_animation_player_params_window();"
+        -annotation "Open a window to export ACE parameters."
+        -sourceType "python";

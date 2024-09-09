@@ -1,0 +1,42 @@
+<project toolsVersion="5.6">
+  <dependency name="python" linkPath="../_build/target-deps/python">
+    <package name="python" version="3.10.10+nv1-${platform}" platforms="linux-x86_64 windows-x86_64" />
+  </dependency>
+
+  <dependency name="gtest" linkPath="../_build/target-deps/gtest/${config}">
+    <package name="gtest" version="1.12.1-pic-a5a89802-${platform}-${config}" platforms="windows-x86_64" />
+    <package name="gtest" version="1.12.1-pic-no-abi-cxx11-bc1707f4-${platform}-${config}" platforms="linux-x86_64" />
+  </dependency>
+
+  <dependency name="audiofile" linkPath="../_build/target-deps/audiofile">
+    <package name="audiofile" version="1.1.1-0" />
+  </dependency>
+
+  <dependency name="protobuf" linkPath="../_build/target-deps/protobuf/${config}">
+    <package name="protobuf" version="5.26.0-1-windows-x86_64-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="grpc" linkPath="../_build/target-deps/grpc/${config}">
+    <package name="grpc" version="1.65.4-dev.5295+main.e78681f9721c6ac292b2c6600437601bebd30126-windows-x86_64-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="abseil" linkPath="../_build/target-deps/abseil/${config}">
+    <package name="abseil" version="20240116.1-0-windows-x86_64-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="openssl" linkPath="../_build/target-deps/openssl/${config}">
+    <package name="openssl" version="3.0.12-1-windows-x86_64-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="re2" linkPath="../_build/target-deps/re2/${config}">
+    <package name="re2" version="20230301-0-windows-x86_64-dynamic-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="zlib" linkPath="../_build/target-deps/zlib/${config}">
+    <package name="zlib" version="1.3.1-0-windows-x86_64-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="c-ares" linkPath="../_build/target-deps/c-ares/${config}">
+    <package name="c-ares" version="1.32.1-dev.5180+main.5d9788307bf02a4036efba61a08ebcba39d4ed1a-windows-x86_64-dynamic-${config}" platforms="windows-x86_64" />
+  </dependency>
+</project>

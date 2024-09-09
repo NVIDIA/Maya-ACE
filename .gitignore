@@ -1,0 +1,15 @@
+*.pyc
+__pycache__
+/_build/
+/_repo/
+/_compiler/
+.cache
+.vscode/settings.json
+.vs
+.lastformat
+desktop.ini
+
+/venv
+
+/deps/devkitBase
+/deps/premake

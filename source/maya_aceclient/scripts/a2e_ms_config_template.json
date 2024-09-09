@@ -1,0 +1,20 @@
+{
+    "net_path": "/path/to/a2e_model.trt",
+    "device_id": 0,
+    "post_processing_config": {
+        "emotion_contrast": 1.0,
+        "live_blend_coef": 0.7,
+        "preferred_emotion_strength": 0.5,
+        "enable_preferred_emotion": true,
+        "emotion_strength": 0.6,
+        "max_emotions": 3,
+        "emotion_correspondence": {
+            "angry": 1,
+            "disgust": 3,
+            "fear": 4,
+            "happy": 6,
+            "sad": 9,
+            "neutral": -1
+        }
+    }
+}
