@@ -107,6 +107,15 @@ with a valid [API key](https://build.nvidia.com/nvidia/audio2face/api)
 
 ### Set up with sample assets
 
+> ### Managing Blendshape Names and Order
+>
+> Proper management of blendshape names and their order is essential
+> for connecting the AceAnimationPlayer node in Maya-ACE to blendshape nodes effectively.
+> For custom asset connections, refer to the
+> [Connecting Custom Blendshapes](#connecting-custom-blendshapes) guide.
+> To achieve optimal facial performance, it’s recommended to adhere to ARKit specifications
+> for naming conventions and structure.
+
 1. Get an API key and setup Maya-ACE for Maya. Please follow [Quickstart](#quickstart) 1. and 2.
 1. Download sample fbx files:
 [Mark](sample_data/mark_bs_arkit_v2.fbx),
