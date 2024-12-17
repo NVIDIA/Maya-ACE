@@ -1,0 +1,3 @@
+set(GTEST_ROOT "${PROJECT_SOURCE_DIR}/_build/target-deps/gtest/${CMAKE_BUILD_TYPE}")
+set(GTEST_INCLUDE_DIRS "${GTEST_ROOT}/include")
+set(GTEST_LIBRARIES "${GTEST_ROOT}/lib")

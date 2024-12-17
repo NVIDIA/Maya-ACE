@@ -1,0 +1,14 @@
+[
+    {
+        "__label__": "Set1",
+        "networkAddress": "url-streaming",
+        "clientType": "Streaming",
+        "functionId": "___"
+    },
+    {
+        "__label__": "Set2",
+        "networkAddress": "url-streaming",
+        "clientType": "Authoring",
+        "functionId": "___"
+    },
+]

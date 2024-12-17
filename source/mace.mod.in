@@ -1,0 +1,19 @@
++ MAYAVERSION:2024 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+MAYA_PLUG_IN_PATH +:= plug-ins/2024
+PYTHONPATH +:= python
+
++ MAYAVERSION:2025 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+MAYA_PLUG_IN_PATH +:= plug-ins/2025
+PYTHONPATH +:= python
+
++ MAYAVERSION:2023 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+MAYA_PLUG_IN_PATH +:= plug-ins/2023
+PYTHONPATH +:= python
+
++ MAYAVERSION:2022 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+MAYA_PLUG_IN_PATH +:= plug-ins/2022
+PYTHONPATH +:= python

@@ -1,0 +1,5 @@
+<config remotes="dht-external">
+    <remote2 name="dht-external">
+        <transport actions="download" protocol="https" packageLocation="d2iqmcaurylv9r.cloudfront.net/${name}@${version}" />
+    </remote2>
+</config>

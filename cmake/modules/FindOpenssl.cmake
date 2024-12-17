@@ -1,0 +1,3 @@
+set(OPENSSL_ROOT "${PROJECT_SOURCE_DIR}/_build/target-deps/openssl/${CMAKE_BUILD_TYPE}")
+set(OPENSSL_INCLUDE_DIRS "${OPENSSL_ROOT}/include")
+set(OPENSSL_LIBRARIES "${OPENSSL_ROOT}/lib")

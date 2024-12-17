@@ -1,0 +1,32 @@
+
+menu -label "ACE" -parent "MayaWindow";
+
+    menuItem
+        -label "Attach a new Animation Player"
+        -command "maya.cmds.loadPlugin('maya_aceclient', qt=1);import ace_tools;ace_tools.attach_animation_player_to_blendshape();"
+        -annotation "Select a blendshape node or a mesh connected to a blendshape node. It will create a new AceAnimationPlayer and connect it to the blendshape node."
+        -sourceType "python";
+
+    menuItem
+        -label "Connect an existing Animation Player"
+        -command "maya.cmds.loadPlugin('maya_aceclient', qt=1);import ace_tools;ace_tools.connect_animation_player_to_blendshape();"
+        -annotation "Select an AceAnimationPlayer node and a blendshape node or a mesh connected to a blendshape node. It will connect the AceAnimationPlayer to the blendshape node."
+        -sourceType "python";
+
+    menuItem
+        -label "Import A2F Parameters"
+        -command "maya.cmds.loadPlugin('maya_aceclient', qt=1);from ace_tools.ui import config_import; config_import.display_import_animation_player_params_window();"
+        -annotation "Open a window to import ACE parameters."
+        -sourceType "python";
+
+    menuItem
+        -label "Export A2F Parameters"
+        -command "maya.cmds.loadPlugin('maya_aceclient', qt=1);from ace_tools.ui import config_export; config_export.AceExportConfigWindow.pop_window();"
+        -annotation "Open a window to export ACE parameters."
+        -sourceType "python";
+
+    menuItem
+        -label "Export A2F Service Configs"
+        -command "maya.cmds.loadPlugin('maya_aceclient', qt=1);from ace_tools.ui import config_export; config_export.AceExportServiceConfigWindow.pop_window();"
+        -annotation "Open a window to export ACE parameters."
+        -sourceType "python";

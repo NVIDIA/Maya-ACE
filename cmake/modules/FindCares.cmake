@@ -1,0 +1,3 @@
+set(CARES_ROOT "${PROJECT_SOURCE_DIR}/_build/target-deps/c-ares/${CMAKE_BUILD_TYPE}")
+set(CARES_INCLUDE_DIRS "${CARES_ROOT}/include")
+set(CARES_LIBRARIES "${CARES_ROOT}/lib")
