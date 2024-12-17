@@ -1,18 +1,36 @@
 [
     {
-        "__label__": "Streaming - Mark",
+        "__label__": "Streaming (1.2) - Mark",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "clientType": "Streaming",
+        "functionId": "b85c53f3-5d18-4edf-8b12-875a400eb798"
+    },
+    {
+        "__label__": "Streaming (1.2) - Claire",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "clientType": "Streaming",
+        "functionId": "a05a5522-3059-4dfd-90e4-4bc1699ae9d4"
+    },
+    {
+        "__label__": "Streaming (1.2) - James",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "clientType": "Streaming",
+        "functionId": "52f51a79-324c-4dbe-90ad-798ab665ad64"
+    },
+    {
+        "__label__": "Streaming (1.0) - Mark",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Streaming",
         "functionId": "945ed566-a023-4677-9a49-61ede107fd5a"
     },
     {
-        "__label__": "Streaming - Claire",
+        "__label__": "Streaming (1.0) - Claire",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Streaming",
         "functionId": "462f7853-60e8-474a-9728-7b598e58472c"
     },
     {
-        "__label__": "Streaming - James",
+        "__label__": "Streaming (1.0) - James",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Streaming",
         "functionId": "a2cc5cac-147d-4e46-b79d-4cea616e21b9"
