@@ -39,18 +39,18 @@
         "__label__": "Authoring - Mark (Early Access only)",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Authoring",
-        "functionId": "be24fd18-4c26-4a38-84ad-c7f88da10835"
+        "functionId": "5d8b0f5f-6d3c-4987-b066-5c0be0fdda00"
     },
     {
         "__label__": "Authoring - Claire (Early Access only)",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Authoring",
-        "functionId": "f33c62b0-96d2-434a-9a4c-e89b7c064be5"
+        "functionId": "4dd6b29e-f4bd-45a8-8b14-c420f8b83f5b"
     },
     {
         "__label__": "Authoring - James (Early Access only)",
         "networkAddress": "https://grpc.nvcf.nvidia.com:443",
         "clientType": "Authoring",
-        "functionId": "b7687090-8510-4282-bc6c-c5e09ddc0864"
+        "functionId": "cc615922-ec78-4cdf-9b72-388ddf1935c4"
     }
 ]
