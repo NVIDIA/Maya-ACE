@@ -1,0 +1,49 @@
+<project toolsVersion="5.6">
+
+  <!-- core dependencies -->
+  <dependency name="gtest" linkPath="../_deps/target-deps/gtest/${config}">
+    <package name="gtest" version="1.12.1-pic-a5a89802-${platform}-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="audiofile" linkPath="../_deps/target-deps/audiofile">
+    <package name="audiofile" version="1.1.1-0" />
+  </dependency>
+
+  <dependency name="protobuf" linkPath="../_deps/target-deps/protobuf/${config}">
+    <package name="protobuf" version="5.26.0-1-${platform}-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="grpc" linkPath="../_deps/target-deps/grpc/${config}">
+    <package name="grpc" version="1.65.4-2-${platform}-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="abseil" linkPath="../_deps/target-deps/abseil/${config}">
+    <package name="abseil" version="20240116.1-0-${platform}-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="openssl" linkPath="../_deps/target-deps/openssl/${config}">
+    <package name="openssl" version="3.0.16-0-${platform}-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="re2" linkPath="../_deps/target-deps/re2/${config}">
+    <package name="re2" version="20230301-0-${platform}-dynamic-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="zlib" linkPath="../_deps/target-deps/zlib/${config}">
+    <package name="zlib" version="1.3.1-0-${platform}-static-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="c-ares" linkPath="../_deps/target-deps/c-ares/${config}">
+    <package name="c-ares" version="1.32.1-0-${platform}-dynamic-${config}" platforms="windows-x86_64" />
+  </dependency>
+
+  <!-- For license checking -->
+  <dependency name="pyyaml" linkPath="../_deps/target-deps/python-packages/${config}">
+    <package name="pyyaml" version="5.3.1" platforms="windows-x86_64" />
+  </dependency>
+
+  <dependency name="rapidjson" linkPath="../_deps/target-deps/rapidjson">
+    <package name="rapidjson" version="1.1.0" platforms="windows-x86_64 linux-x86_64" />
+  </dependency>
+
+</project>

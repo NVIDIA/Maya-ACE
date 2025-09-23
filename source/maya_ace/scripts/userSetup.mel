@@ -1,0 +1,71 @@
+menu -label "ACE/A2F" -parent "MayaWindow" -tearOff true;
+
+    // Create group
+    menuItem -divider true -dividerLabel "Create";
+    
+    menuItem
+        -label "ACE Player on Blendshapes"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.attach_ace_player_to_blendshapes();"
+        -annotation "Select blendshape nodes or a mesh connected to blendshape nodes. It will create a new AceAnimationPlayer and connect it to the blendshape nodes."
+        -sourceType "python";
+
+    menuItem
+        -label "A2F Player on Blendshapes"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.attach_a2f_player_to_blendshapes();"
+        -annotation "Select blendshape nodes or a mesh connected to blendshape nodes. It will create a new A2FAnimationPlayer and connect it to the blendshape nodes."
+        -sourceType "python";
+
+    menuItem
+        -label "A2F Player on Mesh"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.attach_a2f_player_to_mesh();"
+        -annotation "Select a mesh for skin or two meshes for skin and tongue. It will create a new A2FAnimationPlayer and connect geometry outputs to the mesh(es)."
+        -sourceType "python";
+
+    menuItem -divider true -dividerLabel "Modify";
+
+    menuItem
+        -label "Connect Player to Blendshapes"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.connect_animation_player_to_blendshapes(force=1);"
+        -annotation "Select an ACE/A2F Animation Player node and blendshape nodes or a mesh connected to blendshape nodes. It will (re)connect the ACE/A2F Animation Player to the blendshape nodes."
+        -sourceType "python";
+
+    menuItem
+        -label "Connect A2F Player to Skin Mesh"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.connect_a2f_player_to_mesh();"
+        -annotation "Select an A2F Animation Player node and a mesh node. It will (re)connect the A2F Animation Player skin geometry output to the mesh."
+        -sourceType "python";
+
+    menuItem
+        -label "Connect A2F Player to Tongue Mesh"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools import setup;setup.connect_a2f_player_to_mesh(to_tongue=1);"
+        -annotation "Select an A2F Animation Player node and a mesh node. It will (re)connect the A2F Animation Player tongue geometry output to the mesh."
+        -sourceType "python";
+
+    // Config group
+    menuItem -divider true -dividerLabel "Config";
+    
+    menuItem
+        -label "Import A2F Parameters"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools.ui import config_import; config_import.display_import_animation_player_params_window();"
+        -annotation "Open a window to import ACE parameters."
+        -sourceType "python";
+
+    menuItem
+        -label "Export A2F Parameters"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools.ui import config_export; config_export.AceExportConfigWindow.pop_window();"
+        -annotation "Open a window to export ACE parameters."
+        -sourceType "python";
+
+    menuItem
+        -label "Export Configs from an A2F Service"
+        -command "maya.cmds.loadPlugin('maya_ace', qt=1);from ace_tools.ui import service_export; service_export.AceExportServiceConfigWindow.pop_window();"
+        -annotation "Open a window to export ACE parameters."
+        -sourceType "python";
+
+    menuItem -divider true -dividerLabel "Model";
+
+    menuItem
+        -label "Open TRT Model Manager"
+        -command "from trtgen import builder_ui;builder_ui.show_trt_builder_dialog();"
+        -annotation "Open a TRT model manager dialog"
+        -sourceType "python";

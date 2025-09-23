@@ -1,0 +1,3 @@
+global proc AEA2FAnimationPlayerTemplate(  string $nodeName ){
+    python("import ace_ae_templates.ae_a2f_animation_player as ae_a2f_player;ae_a2f_player.AEA2FAnimationPlayer('" + $nodeName + "');");
+}

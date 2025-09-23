@@ -1,0 +1,11 @@
+{
+    "audiofiles_folder": "Samples",
+    "paramsfiles_folder": "Samples",
+    "destination_folder": "Samples",
+    "audiofiles": [
+        ["Audio_Example1.wav", "Config_Example1.json"],
+        ["Audio_Example1.wav", "Config_Example2.json"],
+        ["Audio_Example2.wav", "Config_Example3.yaml"]
+    ],
+    "FBX_axis_system": "Maya Yup"
+}

@@ -1,0 +1,4 @@
+# NOTE - For any new packages added to this list, please make sure that the license is compatible with Maya-ACE (e.g. avoid GPL/LGPL)
+
+PyYAML<7.0, >5.0
+# coverage  # Optional. Enables python test coverage report through test_maya_ace.bat

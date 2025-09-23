@@ -1,0 +1,55 @@
++ MAYAVERSION:2024 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+PATH +:= cuda
+PATH +:= tensorrt
+PATH +:= a2x
+PYTHONPATH +:= python
+TRTEXEC_PATH := tensorrt/trtexec.exe
+MAYA_PLUG_IN_PATH +:= plug-ins/2024
+A2F_MODEL_DIRS +:= models/audio2face-models
+A2E_MODEL_DIRS +:= models/audio2emotion-models
+
++ MAYAVERSION:2025 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+PATH +:= cuda
+PATH +:= tensorrt
+PATH +:= a2x
+PYTHONPATH +:= python
+TRTEXEC_PATH := tensorrt/trtexec.exe
+MAYA_PLUG_IN_PATH +:= plug-ins/2025
+A2F_MODEL_DIRS +:= models/audio2face-models
+A2E_MODEL_DIRS +:= models/audio2emotion-models
+
++ MAYAVERSION:2023 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+PATH +:= cuda
+PATH +:= tensorrt
+PATH +:= a2x
+PYTHONPATH +:= python
+TRTEXEC_PATH := tensorrt/trtexec.exe
+MAYA_PLUG_IN_PATH +:= plug-ins/2023
+A2F_MODEL_DIRS +:= models/audio2face-models
+A2E_MODEL_DIRS +:= models/audio2emotion-models
+
++ MAYAVERSION:2022 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+PATH +:= cuda
+PATH +:= tensorrt
+PATH +:= a2x
+PYTHONPATH +:= python
+TRTEXEC_PATH := tensorrt/trtexec.exe
+MAYA_PLUG_IN_PATH +:= plug-ins/2022
+A2F_MODEL_DIRS +:= models/audio2face-models
+A2E_MODEL_DIRS +:= models/audio2emotion-models
+
++ MAYAVERSION:2026 PLATFORM:win64 mace @MACE_VERSION@ ./mace
+PATH +:= bin
+PATH +:= cuda
+PATH +:= tensorrt
+PATH +:= a2x
+PYTHONPATH +:= python
+TRTEXEC_PATH := tensorrt/trtexec.exe
+MAYA_PLUG_IN_PATH +:= plug-ins/2026
+A2F_MODEL_DIRS +:= models/audio2face-models
+A2E_MODEL_DIRS +:= models/audio2emotion-models
+

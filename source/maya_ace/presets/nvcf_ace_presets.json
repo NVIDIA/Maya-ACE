@@ -1,0 +1,58 @@
+[
+    {
+        "__label__": "Local Host",
+        "networkAddress": "localhost:50051",
+        "functionId": "",
+        "apiKey": "",
+        "__defaults__": {
+        }
+    },
+    {
+        "__label__": "Streaming (1.3) - Claire <Deprecated after 2025-07-25>",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "functionId": "0961a6da-fb9e-4f2e-8491-247e5fd7bf8d",
+        "__defaults__": {
+            "upperFaceSmoothing": 0.001,
+            "lowerFaceSmoothing": 0.006,
+            "upperFaceStrength": 1.0,
+            "lowerFaceStrength": 1.25,
+            "faceMaskLevel": 0.6,
+            "faceMaskSoftness": 0.0085,
+            "skinStrength": 1.0,
+            "lipOpenOffset": 0.0,
+            "eyelidOpenOffset": 0.0
+        }
+    },
+    {
+        "__label__": "Streaming (1.3) - James <Deprecated after 2025-07-25>",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "functionId": "9327c39f-a361-4e02-bd72-e11b4c9b7b5e",
+        "__defaults__": {
+            "upperFaceSmoothing": 0.001,
+            "lowerFaceSmoothing": 0.006,
+            "upperFaceStrength": 1.0,
+            "lowerFaceStrength": 1.2,
+            "faceMaskLevel": 0.6,
+            "faceMaskSoftness": 0.0085,
+            "skinStrength": 1.0,
+            "lipOpenOffset": -0.02,
+            "eyelidOpenOffset": 0.0
+        }
+    },
+    {
+        "__label__": "Streaming (1.3) - Mark <Deprecated after 2025-07-25>",
+        "networkAddress": "https://grpc.nvcf.nvidia.com:443",
+        "functionId": "8efc55f5-6f00-424e-afe9-26212cd2c630",
+        "__defaults__": {
+            "upperFaceSmoothing": 0.001,
+            "lowerFaceSmoothing": 0.0023,
+            "upperFaceStrength": 1.0,
+            "lowerFaceStrength": 1.4,
+            "faceMaskLevel": 0.6,
+            "faceMaskSoftness": 0.0085,
+            "skinStrength": 1.1,
+            "lipOpenOffset": -0.03,
+            "eyelidOpenOffset": 0.06
+        }
+    }
+]

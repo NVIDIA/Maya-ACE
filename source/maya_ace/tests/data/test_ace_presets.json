@@ -1,0 +1,12 @@
+[
+    {
+        "__label__": "Set1",
+        "networkAddress": "nvcf.nvidia.com",
+        "functionId": "___"
+    },
+    {
+        "__label__": "Set2",
+        "networkAddress": "nvcf.nvidia.com",
+        "functionId": "___"
+    }
+]
