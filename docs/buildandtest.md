@@ -40,6 +40,7 @@ Maya ACE uses Audio2Face-3D SDK which requires NVIDIA CUDA for GPU acceleration 
 1. Environment Setup:
     - No additional steps should be required. CMake should automatically detect the CUDA Toolkit if it is installed in the standard location.
     - If you have multiple CUDA versions installed or custom install process, you can specify the version to use by setting the `CUDA_PATH` environment variable.
+    - **NOTE:** Please remove other versions of CUDA if you have multiple CUDA versions installed.
 
     ```powershell
     # Example: CUDA 12.9
@@ -58,13 +59,14 @@ Maya ACE uses TensorRT for GPU acceleration and inference. You may skip this ste
         - This environment variable is used only by `build.bat`. For those who want to run CMake manually, you can refer to the `-DTENSORRT_ROOT_DIR` option.
 
     ```powershell
-    C:\path\to\TensorRT-10.13.x.x
+    # Example: TensorRT-10.13.3.6
+    C:\path\to\TensorRT-10.13.3.6
     ├───bin
     ├───include
     ├───lib
     ...etc
 
-    $env:TENSORRT_ROOT_DIR="C:\path\to\TensorRT-10.13.x.x"
+    $env:TENSORRT_ROOT_DIR="C:\path\to\TensorRT-10.13.3.6"
     ```
 
 ### Audio2Face-3D SDK
@@ -73,17 +75,18 @@ Audio2Face-3D SDK is the core library for Audio2Face-3D. You may need to build t
 
 1. Download the [Audio2Face-3D SDK](https://github.com/NVIDIA/Audio2Face-3D-SDK) and follow the instructions to build the SDK.
     > Use the same versions of CUDA Toolkit and TensorRT to build the SDK and Maya-ACE.
-1. Create `A2X_SDK_ROOT` env variable pointing to the root folder of your downloaded Audio2Face-3D SDK.
+1. Create `A2X_SDK_ROOT` env variable pointing to the audio2x-sdk build output directory or the root folder of your downloaded Audio2Face-3D SDK.
     - This environment variable is used only by [`build.bat`](../build.bat). For those who want to run CMake manually, you can refer to the `-DA2X_SDK_ROOT` option.
 
     ```powershell
-    C:\path\to\Audio2Face-3D-SDK
+    # Example: Audio2Face-3D SDK build output directory
+    C:\path\to\Audio2Face-3D-SDK\_build\windows-x86_64\release\audio2x-sdk
     ├───bin
     ├───include
     ├───lib
     ...etc
 
-    $env:A2X_SDK_ROOT="C:\path\to\Audio2Face-3D-SDK"
+    $env:A2X_SDK_ROOT="C:\path\to\Audio2Face-3D-SDK\_build\windows-x86_64\release\audio2x-sdk"
     ```
 
 ### Maya DevKit
