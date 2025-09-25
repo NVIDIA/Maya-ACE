@@ -28,3 +28,10 @@ To connect an existing Ace/A2FAnimationPlayer to new blendshape nodes, the selec
 - Selected multiple Ace/A2FAnimationPlayer nodes or no blendshape nodes
 
 Please make sure the selection is correct for each operation.
+
+## Cannot open or import Maya scenes
+
+Please check the file sizes look correct. If the file size is 1kb or 4kb, check
+
+- git-lfs is installed. Pulled with git-lfs.
+- Files are downloaded completely without an issue.

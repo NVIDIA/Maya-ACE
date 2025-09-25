@@ -39,7 +39,9 @@
 
 ## Download the Sample Project
 
-The sample project provides example scenes for learning Maya-ACE. Download the [sample project](../sample_project) or clone this repository.
+The sample project provides example scenes for learning Maya-ACE. Clone the repository to use the [sample project](../sample_project).
+
+> NOTE: `Download Zip` option on the Github does not include git-lfs files currently. Please clone the entire repo to use the sample files.
 
 ```text
 sample_project/
