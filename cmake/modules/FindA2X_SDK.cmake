@@ -21,7 +21,7 @@ find_package_handle_standard_args(A2X_SDK DEFAULT_MSG
 
 if(A2X_SDK_FOUND)
     # get A2X_SDK version (potential future use)
-    file(READ ${A2X_SDK_ROOT}/VERSION.md A2X_SDK_VERSION_CONTENTS)
+    file(READ "${A2X_SDK_ROOT}/VERSION.md" A2X_SDK_VERSION_CONTENTS)
     string(REGEX MATCH "(([0-9]+)\.([0-9]+)\.([0-9]+)(\.([0-9]+))?)"
                  A2X_SDK_VERSION "${A2X_SDK_VERSION_CONTENTS}")
 
@@ -31,7 +31,7 @@ if(A2X_SDK_FOUND)
     endif()
     message(STATUS "Found A2X_SDK: v${A2X_SDK_VERSION}  (include: ${A2X_SDK_INCLUDE_DIRS}, library: ${A2X_SDK_LIBRARIES}, bin: ${A2X_SDK_BIN_DIR})")
 
-    mark_as_advanced(A2X_SDK_ROOT_DIR
+    mark_as_advanced(A2X_SDK_ROOT
                      A2X_SDK_INCLUDE_DIRS
                      A2X_SDK_LIBRARIES
                      A2X_SDK_BIN_DIR)
